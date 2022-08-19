@@ -1,0 +1,49 @@
+<div class="col-md-6">
+    <div class="row mt-2">
+        <label>Adınız</label>
+        <input type="text" id="isim">
+
+        <label>Soy Ad</label>
+        <input type="text" id="soyad">
+
+        <button type="button" onclick="veriGetir(),lokasyonAll()">Getir</button>
+        <button type="button" onclick="verisakla()">Kaydet</button>
+        <p id="isim"> isim</p>
+        <p id="soyisim">Soyisim</p>
+      
+        <p  id="id">.....</p>
+     
+    </div>
+    <script>
+        function verisakla() {
+            var data = document.getElementById("isim").value;
+            localStorage.setItem('isim', data)
+            var data2 = document.getElementById("soyad").value;
+           
+            localStorage.setItem('soyad', data2)
+        }
+   
+        function veriGetir() {
+            var data = document.getElementById("isim").innerHTML = "Deger:" + localStorage.getItem("isim")
+            var data2 = document.getElementById("soyisim").innerHTML = "Deger:" + localStorage.getItem("soyad")
+        }
+
+        var lokasyon=document.getElementById("id");
+        function lokasyonAll(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else{
+                lokasyon.innerHTML="sen uçmuşssun";
+
+            }
+            function showPosition(position){
+                lokasyon.innerHTML="Enlem:"+ position.coords.latitude+"<br> Boylam:"+
+                position.coords.longitude;
+                localStorage.setItem('enlem',position.coords.latitude)
+                localStorage.setItem('boylam',position.coords.longitude)
+            }
+        }
+       
+    </script>
+</div>
