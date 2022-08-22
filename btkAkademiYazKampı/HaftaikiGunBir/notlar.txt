@@ -1,0 +1,17 @@
+*********Div****************
+
+container: butun ana sayfa denir
+ herhangı bır tag bırden fazla class ismi alabilir.
+ md= midyum denir sayfayı  12 boler mıdyuma gelınce larcan hemen sayfa daha kucuk sekıle asagı ıner
+ lg=large kadar git hemen aşagı ın responsde hemen asagı ıner
+ sm: mıdyumdan daha kucuk
+ table-danger= stok adedi 0 olanı kırmızı yapıyor
+ table-success=stok adedi fazla olanı yeşil yapıyor
+ table-hover: tabloya hover ozelliği eklıyor
+ table-warning: sarı renk yapıyor
+
+ dropdown-toggle: acılır pencere gibi yapıyor 
+ dropdown: aşagı acıyor
+ dropup: yukarı dorgu acıyor
+ dropleft:sola acar
+ droprihete: saga acıyor
