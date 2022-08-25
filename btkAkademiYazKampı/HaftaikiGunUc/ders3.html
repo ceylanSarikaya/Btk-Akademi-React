@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        for (i = 0; i < 10; i++) {
+            console.log("şuan deger", i)
+        }
+        var sehirler = ["Ankara", "İzmir", "İstanbul", "Ağrı", ["ali", "veli"]]
+        for (i = 0; i < sehirler.length; i++) {
+            console.log(sehirler[i])
+        }
+        sehirler.forEach(function (sehir, i) {
+            console.log((i + 1), "eleman ", sehir);
+        })
+
+
+
+        var benimListem = []
+        var tekEleman = []
+        var ciftEleman = []
+        for (i = 0; i < 3; i++) {
+            benimListem[i] = Number(prompt((i + 1), "Sayi Gir"))
+
+        }
+        // benimListem.forEach(function (sayi) {
+
+        //     if (i % 2 == 0) {
+        //        ciftEleman.push(sayi)
+        //     }
+        //     else {
+        //         tekEleman.push(sayi)
+        //     }
+        // })
+        for (i = 0; i < benimListem.length; i++) {
+            if (benimListem[i] % 2 == 0) {
+                ciftEleman.push(benimListem[i])
+            } else {
+                tekEleman.push(benimListem[i])
+            }
+        }
+        console.log("Şimdi tekleri yazalım")
+        tekEleman.forEach(function (tek) {
+            console.log(tek)
+        }
+        )
+        console.log("Şimdi cift yazalım")
+        for (i = 0; i < ciftEleman.length; i++) {
+            console.log(ciftEleman[i])
+        }
+
+
+
+        //kullanıcıdan 10 tane isim giricek ögrenciler bos listeye eklenecek sonra 3 harfli dort harfli bes harfli bos liste olustur 5 buyuk de ozel 
+        //isim olsun
+        var isimler = []
+        var dörtharf = []
+        var besharf = []
+        var altıharf = []
+        var özelisimli = []
+
+        for (i = 0; i < 3; i++) {
+
+            isimler[i] = prompt("İsim Gir")
+
+        }
+        for (i = 0; i < isimler.length; i++) {
+            if (isimler[i].length == 4) {
+                dörtharf.push(isimler == 4[i])
+            }
+            else if (isimler[i].length == 5) {
+                besharf.push(isimler == 5[i])
+
+            } else if (isimler.length == 6[i]) {
+                altıharf.push(isimler == 4)
+            } else {
+                özelisimli.push(isimler[i])
+            }
+        }
+// 10 elemanlı liste foech le gez tek liste ,cift liste 
+    </script>
+</body>
+
+</html>

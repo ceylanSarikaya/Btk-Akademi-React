@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        var kullanicilar=[
+            {email:"kullanıcılar@gmail.com", sifre: "1234"},
+            {email:"kullanıcılar2@gmail.com", sifre: "1234"},
+            ]
+            var mesajlar=[
+            {email:"kullanıcılar@gmail.com", mesaj: "hello"},
+            {email:"kullanıcılar2@gmail.com", mesaj: "hello2"},
+            ]
+       var email=prompt("email adresinizi giriniz")
+       var sifre=prompt("sifre girniz")
+       function giris(){
+        if((email==kullanicilar[0].email && sifre==kullanicilar[0].sifre) ||
+         (email==kullanicilar[1].email && sifre==kullanicilar[1].sifre)){
+console.log(mesajlar)
+        }
+        else{
+alert("Yanlış Kullanıcı")
+        }
+       }
+
+       giris()     
+        
+    </script>
+</body>
+</html>
