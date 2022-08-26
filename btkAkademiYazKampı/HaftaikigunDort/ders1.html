@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Ana Sayfa</h1>
+    <h1 id="baslik"></h1>
+    <p id="metin"></p>
+    <ol>
+        <li>Almanya</li>
+        <li>Avusturya</li>
+        <li>İtalya</li>
+        <li>Turkiye</li>
+        <li>İngiltere</li>
+    </ol>
+    <script>
+        //Buradaki kod ne işe yarıyor!
+        var baslik = document.getElementById("baslik")
+        var metin = document.getElementById("metin")
+        metin.innerHTML = baslik.innerHTML
+        //***
+        var listeler = document.getElementsByTagName("ol")
+        var ulkeler = listeler[0]
+        var ulkeelemanlari = ulkeler.getElementsByTagName("li")
+        console.log(typeof (ulkeelemanlari))
+        for (i = 0; i < ulkeelemanlari.length; i++) {
+            console.log(ulkeelemanlari[i].innerHTML)
+            if (ulkeelemanlari[i].innerHTML = "Almanya") {
+          
+            }
+        }
+    </script>
+</body>
+</html>

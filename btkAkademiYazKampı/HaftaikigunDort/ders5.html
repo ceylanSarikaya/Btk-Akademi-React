@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Not eklemek</h1>
+
+    <div id="div1">
+        <p id="p1">Paragraf 1</p>
+        <p id="p2">Paragraf 2</p>
+    </div>
+    <script>
+        //paragraf 2 ye ulaşma seklı
+        // var eris=document.querySelector("div#div1>p#p2")
+        // eris.innerHTML="CABBAR"
+        var baslik=document.createElement("h3")
+        var node =document.createTextNode("Merhaba ben ceylan")
+        baslik.appendChild(node)
+        var div1=document.getElementById("div1")
+        var p2=document.getElementById("p2");
+        div1.insertBefore(baslik,p2)
+        div1.removeChild(p2)//silme işlemi yapıyor
+
+        div1.replaceChild(baslik,p1)//yerine koyuyoruz p1 yerine koydu
+
+
+        //Ödev 
+
+    </script>
+</body>
+</html>

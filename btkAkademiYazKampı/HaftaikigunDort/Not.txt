@@ -1,0 +1,4 @@
+contiu: atlıyor
+break: sonlandırıyor
+querySelectorAll: iki tane aynı class olan varsa bununla yolunu belirtmemmiz gerekiyor.
+click: tıkalnadıgında
