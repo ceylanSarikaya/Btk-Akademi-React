@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ogrenciler = []
+        var bestenKucuk = []
+        var bestenBuyuk = []
+
+
+        for (i = 0; i < 10; i++) {
+
+            ogrenciler[i] = prompt("İsim Gir")
+
+        }
+        ogrenciler.forEach(isim => {
+            if (isim.length <= 5) {
+                bestenKucuk.push(isim)
+            }
+            else {
+                bestenBuyuk.push(isim)
+            }
+        })
+
+        
+        // for (i = 0; i < ogrenciler.length; i++) {
+        //     if (ogrenciler[i].length == 4) {
+        //         dörtharf.push(ogrenciler[i] == 4)
+        //         console.log(dörtharf)
+        //     }
+        //     else if (ogrenciler[i].length == 5) {
+        //         dörtharf.push(ogrenciler[i] == 5)
+        //         console.log(besharf)
+
+        //     } else if (ogrenciler.length == 6[i]) {
+        //         altıharf.push(ogrenciler[i] == 5)
+        //         console.log(altıharf)
+        //     } else {
+        //         özelisimli.push(ogrenciler[i])
+        //     }
+        // }
+
+        //Kullanıcıdan al bir dizi 10 tane isim kelimelrden olusuyor lenth bak ogrenciler dizisine at 5 
+    </script>
+</body>
+
+</html>

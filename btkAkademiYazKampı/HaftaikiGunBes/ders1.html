@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="merhaba">Merhaba Dunya</h2>
+    <h3 class="cuma"></h3>
+    <h3 class="cuma"></h3>
+    <h3 class="cuma"></h3>
+    <ol>
+        <li id="cuma">Erzurum</li>
+        <li id="cuma">Ankara</li>
+        <li id="cuma">İstanbul</li>
+        <li id="cuma">Adana</li>
+        <li id="cuma">Bursa</li>
+    </ol>
+
+
+    <script>
+        // h3 için işlemler
+        var h3elemanları = ["Hong Kong", "Hollanda", "Hırvatistan"]
+        var ah3 = document.querySelectorAll("h3.cuma")
+
+        for (i = 0; i < ah3.length; i++) {
+            ah3[i].innerHTML = h3elemanları[i]
+        }
+
+        ah3[1].addEventListener("click", h2)
+        // ol için işlemler
+
+
+        var ulkeelemanlari = ulkeler.querySelector("li.cuma")
+        for (i = 0; i < ulkeelemanlari.length; i++) {
+            console.log(ulkeelemanlari[i].innerHTML)
+        }
+        ulkeelemanlari[1].addEventListener("click", foksiyon)
+
+
+        // baslik.addEventListener("mouseover",foksiyon)
+        function foksiyon() {
+            cuma[2].style.backgroundColor = "red"
+            cuma[2].style.color = 'blue'
+        }
+        function h2() {
+            ulkeelemanlari[3] = h3elemanları[1].innerHTML
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dizi = [1, 2, 3, 4, 5, 6]
+        var kareDizi = []
+
+        dizi.forEach(function (sayi) {
+            kareDizi.push(sayi ** 2)
+            console.log(kareDizi);
+        });
+
+
+        var cift = []
+        var tek = []
+
+        dizi.forEach(a => {
+            if (a % 2 == 0) {
+                cift.push(a ** 3)
+                console.log(cift)
+            }
+            else {
+                tek.push(a ** 2)
+                console.log(tek)
+            }
+
+        });
+        var cift2 = []
+        var tek2 = []
+        for (i = 0; i < dizi.length; i++) {
+            if (a % 2 == 0) {
+                cift2.push(dizi[i] ** 2)
+                console.log(cift2)
+            }
+            else {
+                tek2.push(dizi[i] ** 2)
+                console.log(tek2)
+            }
+
+        }
+
+
+    
+    </script>
+</body>
+</html>
