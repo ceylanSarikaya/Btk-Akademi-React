@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/static/js/main.defcafdd.js",
+    "index.html": "/index.html",
+    "main.defcafdd.js.map": "/static/js/main.defcafdd.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.defcafdd.js"
+  ]
+}
